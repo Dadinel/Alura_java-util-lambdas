@@ -11,6 +11,11 @@ public class TesteArrayListEquals {
 	public static void main(String[] args) {
 		ArrayList<Conta> lista = new ArrayList<Conta>();
 
+		//Conta cc1 = new ContaCorrente(22, 22);
+		//Conta cc2 = new ContaCorrente(22, 22);
+
+		//boolean igual = cc1.ehIgual(cc2);
+
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
 
@@ -23,11 +28,11 @@ public class TesteArrayListEquals {
 
 		System.out.println("Já existe? " + existe);
 
-		for (Conta conta: lista) {
-			if(conta.ehIgual(cc2)) {
-				System.out.println("Já tenho essa conta!");
-			}
-		}
+		//for (Conta conta: lista) {
+			//if(conta.ehIgual(cc2)) {
+				//System.out.println("Já tenho essa conta!");
+			//}
+		//}
 
 		for (Conta conta: lista) {
 			System.out.println(conta);
