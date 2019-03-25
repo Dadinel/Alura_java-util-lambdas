@@ -1,5 +1,6 @@
 package br.com.bytebank.banco.modelo;
 
+import com.sun.org.apache.xpath.internal.operations.Equals;
 
 /**
  * Classe representa a moldura de uma conta
@@ -96,5 +97,17 @@ public abstract class Conta extends Object {
 	public String toString() {
 		return "Numero: " + this.numero + ", Agencia: " + this.agencia;
 	}
+
+    public boolean ehIgual(Conta outra) {
+    	if(this.agencia != outra.agencia) {
+    		return false;
+    	}
+
+    	if(this.numero != outra.numero) {
+    		return false;
+    	}
+
+    	return true;
+    }
 
 }
